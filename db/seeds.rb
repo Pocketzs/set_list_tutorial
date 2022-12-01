@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@blink = Artist.create!(name: "Blink-182")
+@small_things = @blink.songs.create!(title: "All The Small Things", length: 846, play_count: 122344123)
+@what_age = @blink.songs.create!(title: "What's My Age Again", length: 890, play_count: 122312323)
